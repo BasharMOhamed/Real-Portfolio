@@ -1,21 +1,17 @@
 import React from "react";
 import { Card } from "../ui/card";
 import { StatsCardProps } from "@/types/statsCard";
+import SectionHeader from "../SectionHeader";
 
 const About = () => {
   return (
     <section id="about" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="bg-gradient-secondary bg-clip-text text-transparent">
-              About Me
-            </span>
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Passionate developer with expertise in modern web technologies
-          </p>
-        </div>
+        <SectionHeader
+          title="About Me"
+          subtitle="Passionate developer with expertise in modern web technologies"
+          gradient="bg-gradient-secondary"
+        />
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Cards */}
           <div className="space-y-6">
