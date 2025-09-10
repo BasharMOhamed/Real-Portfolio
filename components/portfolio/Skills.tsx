@@ -61,14 +61,14 @@ export default Skills;
 
 const CategoryCard = ({ title, skills, gradient }: CategorySkillsProps) => {
   return (
-    <Card className=" p-8 bg-glass border-2 backdrop-blur-sm shadow-test-hover transition-all group">
+    <Card className=" p-8 bg-glass border-2 backdrop-blur-sm shadow-test-hover transition-all group flex  items-center">
       <div
         className={`w-16 h-16 ${gradient} rounded-lg mb-6 flex items-center justify-center group-hover:scale-110 transition-transform`}
       >
         <span className="text-white font-bold text-xl">{title[0]}</span>
       </div>
       <h3 className="text-xl font-semibold mb-6 text-foreground">{title}</h3>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex justify-center flex-wrap gap-2">
         {skills.map((skill) => (
           <Badge
             key={skill}
