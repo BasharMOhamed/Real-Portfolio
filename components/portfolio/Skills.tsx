@@ -14,6 +14,7 @@ const skillCategories: CategorySkillsProps[] = [
       "React",
       "TypeScript",
       "Next.js",
+      "ReactNative",
       "Redux",
       "Tailwind CSS",
       "Material UI",
