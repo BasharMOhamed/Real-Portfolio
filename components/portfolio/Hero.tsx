@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
@@ -6,6 +7,12 @@ import { ArrowDown } from "lucide-react";
 import { socialButtons } from "@/constants/socialBtns";
 
 const Hero = () => {
+  const goToProjects = () => {
+    const element = document.querySelector("#projects");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section
       id="home"
@@ -40,6 +47,7 @@ const Hero = () => {
               variant={"default"}
               size={"lg"}
               className="group cursor-pointer"
+              onClick={goToProjects}
             >
               View My Work
               <ArrowDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
