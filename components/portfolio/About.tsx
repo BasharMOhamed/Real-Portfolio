@@ -25,7 +25,7 @@ const About = () => {
                 Node.js, Next.js and modern cloud technologies.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                I'm passionate about writing clean, maintainable code and
+                I&apos;m passionate about writing clean, maintainable code and
                 staying up-to-date with the latest industry trends and best
                 practices.
               </p>
