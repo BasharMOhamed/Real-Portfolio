@@ -153,7 +153,7 @@ const ProjectCard = ({
 }: ProjectProps) => {
   return (
     <Card className="group bg-glass border-2 backdrop-blur-sm shadow-card shadow-test-hover transition-all">
-      <div className="aspect-video relative overflow-hidden hover:scale-110">
+      <div className="aspect-video relative overflow-hidden hover:scale-110 transition-all">
         <Image src={image} alt={title} fill />
       </div>
 

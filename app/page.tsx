@@ -1,8 +1,8 @@
 import About from "@/components/portfolio/About";
+import Contact from "@/components/portfolio/Contact";
 import Hero from "@/components/portfolio/Hero";
 import Projects from "@/components/portfolio/Projects";
 import Skills from "@/components/portfolio/Skills";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
+      <Contact />
     </div>
   );
 }
